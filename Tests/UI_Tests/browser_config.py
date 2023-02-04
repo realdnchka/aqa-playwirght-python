@@ -13,3 +13,11 @@ class BrowserConfig:
         match self.browser_name:
             case "chrome":
                 return self.playwright.chromium.launch(channel=self.browser_name, headless=self.is_headless)
+            case "webkit":
+                return self.playwright.webkit.launch(channel=self.browser_name, headless=self.is_headless)
+            case "firefox":
+                return self.playwright.firefox.launch(channel=self.browser_name, headless=self.is_headless)
+            case "msedge":
+                return self.playwright.chromium.launch(channel=self.browser_name, headless=self.is_headless)
+            case _:
+                raise Exception('Browser name is not defined correctly. Check available names in README.md file')

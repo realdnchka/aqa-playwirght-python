@@ -4,3 +4,5 @@ from Tests.UI_Tests.browser_config import BrowserConfig
 
 class BaseTestUi(BaseTest):
     browser = BrowserConfig().browser
+    page = browser.new_page()
+

@@ -1,7 +1,7 @@
-from PageObjects.abstract_page import AbstractPage
+from PageObjects.base_page import BasePage
 
 
-class LoginPage(AbstractPage):
+class LoginPage(BasePage):
     def __init__(self, page):
         #elements
         super(LoginPage, self).__init__(page)

@@ -6,19 +6,17 @@ from PageObjects import MainPage, LoginPage, RegistrationPage
 
 class TestRegistration(BaseTestUi):
     def test_registration_ui(self):
-        page = self.browser.new_page()
-
-        main_page = MainPage(page)
-        login_page = LoginPage(page)
-        registration_page = RegistrationPage(page)
+        main_page = MainPage(self.page)
+        login_page = LoginPage(self.page)
+        registration_page = RegistrationPage(self.page)
         user = ug.generate_user()
 
-        page.goto(main_page.url)
+        self.page.goto(main_page.url)
         main_page.login_btn_click()
         expect(login_page.title_get()).to_be_visible()
 
         login_page.register_btn_click()
-        expect(page).to_have_url(registration_page.url)
+        expect(self.page).to_have_url(registration_page.url)
 
         registration_page.email_input_fill(user.email)
         registration_page.password_input_fill(user.password)

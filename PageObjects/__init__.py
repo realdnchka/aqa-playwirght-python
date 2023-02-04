@@ -1,4 +1,3 @@
-from PageObjects.main_page import MainPage
-from PageObjects.registration_page import RegistrationPage
-from PageObjects.login_page import LoginPage
-from PageObjects.abstract_page import AbstractPage
+from .login_page import LoginPage
+from .main_page import MainPage
+from .registration_page import RegistrationPage

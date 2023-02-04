@@ -1,7 +1,7 @@
-import PageObjects
+from PageObjects.abstract_page import AbstractPage
 
 
-class RegistrationPage(PageObjects.AbstractPage):
+class RegistrationPage(AbstractPage):
     def __init__(self, page):
         #elements
         super(RegistrationPage, self).__init__(page)

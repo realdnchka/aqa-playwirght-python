@@ -1,0 +1,25 @@
+## Simple Python AQA Framework
+### Overview:
+- Playwright for UI Testing
+- requests library for API testing
+- Good structure :slightly_smiling_face:
+
+### Running:
+To run all tests use following command:
+```
+pytest Tests
+```
+
+To run only API tests use following command:
+```
+pytest Tests/API_Tests
+```
+
+To run only UI tests use following command:
+```
+pytest Tests/UI_Tests
+```
+
+### Feature plans:
+- Docker support
+- Beautiful HTML report for PMs :rofl:

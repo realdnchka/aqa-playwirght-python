@@ -8,7 +8,9 @@
 - python 3+
 
 ### Install:
-
+```
+pip3 install -r requirements.txt
+```
 
 ### Running:
 To run all tests use following command:

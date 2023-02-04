@@ -4,6 +4,12 @@
 - requests library for API testing
 - Good structure :slightly_smiling_face:
 
+### Requirements:
+- python 3+
+
+### Install:
+
+
 ### Running:
 To run all tests use following command:
 ```

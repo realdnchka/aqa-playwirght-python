@@ -23,4 +23,7 @@ class Logger:
             file_handler.setFormatter(formatter)
             self.logger.addHandler(file_handler)
 
+    def clear_logs(self):
+        with open('tests.log', 'r+') as file:
+            file.truncate(0)
     # TODO make fabric for loggers, ex: API and UI

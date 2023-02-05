@@ -35,7 +35,7 @@ In config.json you can see configuration of test:
 - ``browser`` using to define browser, you can use ``webkit``, ``chrome``, ``firefox``, ``msedge``
 - ``headless`` using to enable headless mode of browser
 - ``logging`` using to enable logging
-
+- ``timeout`` using to set timeout in ms
 ### Feature plans:
 - Docker support
 - Parallelization

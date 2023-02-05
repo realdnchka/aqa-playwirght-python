@@ -6,6 +6,7 @@ from tests.ui_tests.browser_config import BrowserConfig
 class BaseTestUi(BaseTest):
     browser = BrowserConfig().browser
     page = browser.new_page()
+    page.set_default_timeout(BaseTest().config.timeout)
 
     @pytest.fixture(autouse=True)
     def before_each_test_ui(self):

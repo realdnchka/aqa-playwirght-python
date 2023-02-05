@@ -24,3 +24,5 @@ class Logger:
                 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
                 fh.setFormatter(formatter)
                 self.logger.addHandler(fh)
+
+    # TODO make fabric for loggers, ex: API and UI

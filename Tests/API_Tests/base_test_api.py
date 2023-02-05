@@ -11,7 +11,7 @@ class BaseTestApi(BaseTest):
 
     @pytest.fixture(autouse=True)
     def before_each_test_api(self):
-        self.log.__int__("API")
+        self.log.get_instance()
         self.log.logger.info("Start test")
         yield
         self.log.logger.info("End test")

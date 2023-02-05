@@ -3,6 +3,7 @@
 - Playwright for UI Testing
 - requests library for API testing
 - Good structure :slightly_smiling_face:
+- Logs
 
 ### Requirements:
 - python 3+

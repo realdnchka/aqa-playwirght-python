@@ -3,7 +3,7 @@ from page_objects.base_page import BasePage
 
 class MainPage(BasePage):
     def __init__(self, page):
-        #elements
+        # elements
         super().__init__(page)
         self.login_btn = '//*[@id="userbar"]/div[1]/div/div/div[1]'
 

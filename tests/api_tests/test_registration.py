@@ -4,7 +4,7 @@ from helpers import user_generation as ug
 
 class TestRegistration(BaseTestApi):
     def __int__(self):
-        BaseTestApi.__init__()
+        super().__init__(self)
 
     def test_registration_api(self):
         user = ug.generate_user()

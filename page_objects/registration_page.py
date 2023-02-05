@@ -3,7 +3,7 @@ from page_objects.base_page import BasePage
 
 class RegistrationPage(BasePage):
     def __init__(self, page):
-        #elements
+        # elements
         super().__init__(page)
         self.url = self.url[0: 8] + 'profile' + self.url[11: -1] + '/registration'
         self.email_input = "//input[@type='email']"

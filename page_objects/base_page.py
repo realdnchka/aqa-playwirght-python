@@ -19,23 +19,23 @@ class BasePage:
             self.log.logger.info(f'Click by {locator}')
             self.page.locator(locator).click()
         except playwright.sync_api.Error as e:
-            self.log.logger.error(f'Unable to click by {locator} \n %s' % e)
+            # self.log.logger.error(f'Unable to click by {locator} \n %s' % e)
             sys.exit()
 
     def send_keys(self, locator: str, text: str):
         try:
-            self.log.logger.info(f'Fill in {locator}')
+            # self.log.logger.info(f'Fill in {locator}')
             self.page.locator(locator).fill(text)
         except playwright.sync_api.Error as e:
-            self.log.logger.error(f'Unable to fill {locator}  \n %s' % e)
+            # self.log.logger.error(f'Unable to fill {locator}  \n %s' % e)
             sys.exit()
 
     def is_visible(self, locator: str):
         try:
-            self.log.logger.info(f'Visibility check of {locator}')
+            # self.log.logger.info(f'Visibility check of {locator}')
             expect(self.page.locator(locator)).to_be_visible()
 
         except playwright.sync_api.Error as e:
-            self.log.logger.error(f'{locator} + \n %s' % e)
+            # self.log.logger.error(f'{locator} + \n %s' % e)
             sys.exit()
     # TODO add decorators for other actions

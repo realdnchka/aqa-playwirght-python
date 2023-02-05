@@ -1,7 +1,8 @@
 from playwright.sync_api import expect
 from helpers import user_generation as ug
 from tests.ui_tests.base_test_ui import BaseTestUi
-from page_objects import MainPage, LoginPage, RegistrationPage
+from page_objects import LoginPage, RegistrationPage
+from page_objects.new_main_page import MainPage
 
 
 class TestRegistration(BaseTestUi):
@@ -11,10 +12,9 @@ class TestRegistration(BaseTestUi):
         registration_page = RegistrationPage(self.page)
         user = ug.generate_user()
 
-        self.page.goto(main_page.url)
-        main_page.login_btn_click()
+        self.page.goto(main_page.page_url)
+        main_page.btn_login_click()
         expect(login_page.title_get()).to_be_visible()
-
         login_page.register_btn_click()
         expect(self.page).to_have_url(registration_page.url)
 

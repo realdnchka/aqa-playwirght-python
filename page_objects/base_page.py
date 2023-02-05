@@ -9,10 +9,11 @@ from helpers.logger import Logger
 
 class BasePage:
     # TODO make another implementation of base page: inheriting of playwright.Page
+    log = Logger("UI")
+
     def __init__(self, page: playwright.sync_api.Page):
         self.url = Configuration().url
         self.page = page
-        self.log = Logger.get_instance()
 
     def click(self, locator: str):
         try:

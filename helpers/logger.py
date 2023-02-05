@@ -3,18 +3,11 @@ from configuration import Configuration
 
 
 class Logger:
-    __instance = None
-
-    @staticmethod
-    def get_instance():
-        if Logger.__instance is None:
-            Logger()
-        return Logger.__instance
-
-    def __init__(self):
-        Logger.__instance = self
-        self.logger = logging.getLogger("AT")
+    def __init__(self, name):
+        self.logger = logging.getLogger(name)
         if Configuration().logging == 'true':
+            if self.logger.hasHandlers():
+                self.logger.handlers.clear()
             self.logger.setLevel(logging.INFO)
             file_handler = logging.FileHandler('tests.log')
             file_handler.setLevel(logging.INFO)

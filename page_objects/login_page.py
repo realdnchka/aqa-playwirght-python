@@ -3,7 +3,7 @@ from page_objects.base_page import BasePage
 
 class LoginPage(BasePage):
     def __init__(self, page):
-        #elements
+        # elements
         super().__init__(page)
         self.title = page.locator("//div[@class='auth-form__body']//div[contains(text(), 'Вход')]")
         self.login_btn = ""

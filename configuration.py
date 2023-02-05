@@ -10,4 +10,5 @@ class Configuration:
         self.url = configuration["urls"]["url"]
         self.registration_url = configuration["urls"]["registration_url"]
         self.logging = configuration["logging"]
+        self.timeout = int(configuration["timeout"])
         # TODO add timeout config

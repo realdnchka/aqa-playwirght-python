@@ -7,5 +7,5 @@
   },
   "parallelization": "true",
   "logging": "true",
-  "timeout": "3000"
+  "timeout": "10000"
 }

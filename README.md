@@ -16,17 +16,17 @@ playwright install
 ### Running:
 To run all tests use following command:
 ```
-pytest Tests
+pytest tests
 ```
 
 To run only API tests use following command:
 ```
-pytest Tests/API_Tests
+pytest tests/api_tests
 ```
 
 To run only UI tests use following command:
 ```
-pytest Tests/UI_Tests
+pytest tests/ui_tests
 ```
 ### Configuration:
 In config.json you can see configuration of test:

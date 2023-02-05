@@ -1,11 +1,10 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: python tests
+name: Python tests
 
 on:
-  push:
-    branches: [ "master" ]
+  [push],
   pull_request:
     branches: [ "master" ]
 
@@ -30,4 +29,4 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        pytest Tests
+        pytest tests

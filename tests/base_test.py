@@ -1,3 +1,4 @@
+import pytest
 from configuration import Configuration
 from helpers.logger import Logger
 

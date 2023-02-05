@@ -1,6 +1,6 @@
 {
   "browser": "chrome",
-  "headless": "true",
+  "headless": "false",
   "urls": {
     "url": "https://www.onliner.by/",
     "registration_url": "https://profile.onliner.by/sdapi/user.api/registration"

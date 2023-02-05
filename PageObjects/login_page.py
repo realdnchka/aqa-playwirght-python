@@ -9,7 +9,7 @@ class LoginPage(BasePage):
         self.login_btn = page.locator("")
         self.login_input = page.locator("")
         self.password_input = page.locator("")
-        self.register_btn = page.locator("//a[contains(@href, '/registration')]")
+        self.register_btn = page.locator("//a[contains(@href, '/rgistration')]")
 
     def login_btn_click(self):
         self.login_btn.click()
@@ -21,6 +21,7 @@ class LoginPage(BasePage):
         self.password_input.fill(text)
 
     def register_btn_click(self):
+
         self.register_btn.click()
 
     def title_get(self):

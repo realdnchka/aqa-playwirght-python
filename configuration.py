@@ -9,3 +9,4 @@ class Configuration:
         self.is_headless = configuration["headless"]
         self.url = configuration["urls"]["url"]
         self.registration_url = configuration["urls"]["registration_url"]
+        self.logging = configuration["logging"]

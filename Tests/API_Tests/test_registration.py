@@ -3,6 +3,9 @@ from Helpers import user_generation as ug
 
 
 class TestRegistration(BaseTestApi):
+    def __int__(self):
+        BaseTestApi.__init__()
+
     def test_registration_api(self):
         user = ug.generate_user()
         self.api_helper.url = self.config.registration_url

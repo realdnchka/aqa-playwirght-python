@@ -1,6 +1,5 @@
 from configuration import Configuration
-from Helpers.logger import Logger
-import pytest
+from helpers.logger import Logger
 
 
 class BaseTest:

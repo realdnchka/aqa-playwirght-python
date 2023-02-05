@@ -1,6 +1,6 @@
-from Tests.base_test import BaseTest
-from Helpers import api_helper as api
 import pytest
+from tests.base_test import BaseTest
+from helpers import api_helper as api
 
 
 class BaseTestApi(BaseTest):

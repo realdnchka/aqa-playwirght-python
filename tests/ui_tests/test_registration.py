@@ -1,7 +1,7 @@
 from playwright.sync_api import expect
-from Helpers import user_generation as ug
-from Tests.UI_Tests.base_test_ui import BaseTestUi
-from PageObjects import MainPage, LoginPage, RegistrationPage
+from helpers import user_generation as ug
+from tests.ui_tests.base_test_ui import BaseTestUi
+from page_objects import MainPage, LoginPage, RegistrationPage
 
 
 class TestRegistration(BaseTestUi):

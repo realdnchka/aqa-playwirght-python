@@ -1,6 +1,6 @@
 import string
 import random
-from Helpers.user import User
+from helpers.user import User
 
 
 def generate_user():

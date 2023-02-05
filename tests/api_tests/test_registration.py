@@ -1,5 +1,5 @@
-from Tests.API_Tests.base_test_api import BaseTestApi
-from Helpers import user_generation as ug
+from tests.api_tests.base_test_api import BaseTestApi
+from helpers import user_generation as ug
 
 
 class TestRegistration(BaseTestApi):

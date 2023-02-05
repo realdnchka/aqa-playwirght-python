@@ -1,6 +1,6 @@
-from Tests.base_test import BaseTest
-from Tests.UI_Tests.browser_config import BrowserConfig
 import pytest
+from tests.base_test import BaseTest
+from tests.ui_tests.browser_config import BrowserConfig
 
 
 class BaseTestUi(BaseTest):

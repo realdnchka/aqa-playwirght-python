@@ -21,7 +21,7 @@ class TestRegistration(BaseTestUi):
         registration_page.email_input_fill(user.email)
         registration_page.password_input_fill(user.password)
         registration_page.password_repeat_input_fill(user.password)
-        registration_page.accept_checbox_click()
+        registration_page.accept_checkbox_click()
         registration_page.registration_btn_click()
 
-        expect(registration_page.success_registration_text).to_be_visible()
+        registration_page.success_registration_text_is_visible()

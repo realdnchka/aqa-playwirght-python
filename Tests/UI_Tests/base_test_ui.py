@@ -9,7 +9,6 @@ class BaseTestUi(BaseTest):
 
     @pytest.fixture(autouse=True)
     def before_each_test_ui(self):
-        self.log.__int__(name='UI')
         self.log.logger.info("Start test")
         yield
         self.log.logger.info("End test")

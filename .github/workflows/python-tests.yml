@@ -28,6 +28,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest tests
-    - name: Show tests.log
+    - name: Show last_test.log
       run: |
-        cat tests.log
+        cat last_test.log

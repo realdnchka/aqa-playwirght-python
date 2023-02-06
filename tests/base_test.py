@@ -5,4 +5,4 @@ from helpers.logger import Logger
 
 class BaseTest:
     config = Configuration()
-    log = None
+    log = Logger()

@@ -7,10 +7,5 @@ from helpers import api_helper as api
 
 class BaseTestApi(BaseTest):
     api_helper = api.ApiHelper
-    log = Logger("API")
-
-    @pytest.fixture(autouse=True)
-    def before_each_test_api(self):
-        self.log.logger.info("Start test")
-        yield
-        self.log.logger.info("End test")
+    log = BaseTest.log
+    log.create_logger("API")

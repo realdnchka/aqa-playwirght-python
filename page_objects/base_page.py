@@ -9,7 +9,8 @@ from helpers.logger import Logger
 
 class BasePage:
     # TODO make another implementation of base page: inheriting of playwright.Page
-    log = Logger("UI")
+    log = Logger()
+    log.create_logger("UI")
 
     def __init__(self, page: playwright.sync_api.Page):
         self.url = Configuration().url

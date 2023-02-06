@@ -4,7 +4,8 @@ from helpers.logger import Logger
 
 
 class ApiHelper:
-    log = Logger("API")
+    log = Logger()
+    log.create_logger("API")
 
     def __init__(self):
         self.url = ""

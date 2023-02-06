@@ -41,3 +41,6 @@ In config.json you can see configuration of test:
 - Docker support
 - Parallelization
 - Beautiful HTML report for PMs :rofl:
+
+### Notes:
+- ``.gitkeep`` file in ``logs`` directory using for keep directory empty for running GitHub actions

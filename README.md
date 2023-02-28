@@ -6,7 +6,7 @@
 - Logs
 
 ### Requirements:
-- python 3+
+- python 3.8+
 
 ### Install:
 ```
@@ -20,15 +20,6 @@ To run all tests use following command:
 pytest tests
 ```
 
-To run only API tests use following command:
-```
-pytest tests/api_tests
-```
-
-To run only UI tests use following command:
-```
-pytest tests/ui_tests
-```
 ### Configuration:
 In config.json you can see configuration of test:
 - ``urls`` using for web/api urls
@@ -37,10 +28,6 @@ In config.json you can see configuration of test:
 - ``headless`` using to enable headless mode of browser
 - ``logging`` using to enable logging
 - ``timeout`` using to set timeout in ms
-### Feature plans:
-- Docker support
-- Parallelization
-- Beautiful HTML report for PMs :rofl:
 
 ### Notes:
 - ``.gitkeep`` file in ``logs`` directory using for keep directory empty for running GitHub actions

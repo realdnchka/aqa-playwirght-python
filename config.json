@@ -2,8 +2,7 @@
   "browser": "chrome",
   "headless": "true",
   "urls": {
-    "url": "https://www.onliner.by/",
-    "registration_url": "https://profile.onliner.by/sdapi/user.api/registration"
+    "url": "https://demoqa.com/"
   },
   "parallelization": "true",
   "logging": "true",

@@ -40,4 +40,13 @@ class BasePage:
         except playwright.sync_api.Error as e:
             self.log.logger.error(f'{locator} + \n %s' % e)
             sys.exit()
+
+    def get_text(self, locator: str):
+        try:
+            self.log.logger.info(f'Trying to get text of {locator}')
+            return self.page.locator(locator).inner_text()
+        except playwright.sync_api.Error as e:
+            self.log.logger.error(f'{locator} + \n %s' % e)
+            sys.exit()
+
     # TODO add decorators for other actions
